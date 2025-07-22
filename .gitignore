@@ -1,0 +1,74 @@
+# System files
+.DS_Store
+.DS_Store?
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+node_modules/
+
+# Shopify CLI files
+.shopify/
+
+# Release files
+release
+*.zip
+
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+.env
+.env.*.local
+.env.local
+
+# Build directories
+dist/
+build/
+tmp/
+temp/
+.cache/
+.next/
+
+# Editors
+.vscode/
+.idea/
+*.code-workspace
+
+# Nginx
+nginx/secrets/
+nginx/*.conf.bak
+nginx/sites-available/example.conf
+
+# SSL/Certs
+certs/
+*.key
+*.crt
+*.pem
+
+# Docker
+docker-compose.override.yml
+.docker/
+
+# PM2
+pids/
+pm2-*.log
+ecosystem.config.js

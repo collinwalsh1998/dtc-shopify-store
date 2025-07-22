@@ -1,0 +1,3 @@
+#templates/product.json
+#templates/*.json
+#/(templates|sections)/.*\.json/
