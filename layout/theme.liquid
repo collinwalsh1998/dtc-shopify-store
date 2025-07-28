@@ -2,6 +2,7 @@
 <html lang="{{ request.locale.iso_code }}">
 <head>
     {{ content_for_header }}
+    {% render 'vite-tag' with 'main.scss' %}
 </head>
 <body>
     {{ content_for_layout }}

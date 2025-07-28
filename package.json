@@ -3,6 +3,7 @@
   "description": "DTC Shopify store codebase",
   "version": "1.0.0",
   "author": "Collin Walsh",
+  "type": "module",
   "homepage": "https://github.com/collinwalsh1998/dtc-shopify-store#readme",
   "repository": {
     "type": "git",
@@ -12,12 +13,13 @@
     "url": "https://github.com/collinwalsh1998/dtc-shopify-store/issues"
   },
   "scripts": {
-    "dev": "vite build --watch",
+    "dev": "vite dev",
     "build": "vite build"
   },
   "devDependencies": {
     "sass": "^1.89.2",
-    "vite": "^7.0.5"
+    "vite": "^7.0.6",
+    "vite-plugin-shopify": "^4.0.2"
   },
   "dependencies": {
     "modern-normalize": "^3.0.1"

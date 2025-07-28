@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import shopify from 'vite-plugin-shopify';
 import path from 'path';
 
 export default defineConfig({
@@ -8,17 +9,24 @@ export default defineConfig({
     outDir: '.',
     emptyOutDir: false,
     rollupOptions: {
-      input: './assets/scss/main.scss',
+      input: {
+        main: path.resolve(__dirname, 'src/css/main.scss')
+      },
       output: {
-        entryFileNames: 'main.css'
+        assetFileNames: 'assets/[name].[hash].css'
       },
     },
   },
   css: {
     preprocessorOptions: {
       scss: {
-        includePaths: [path.resolve(__dirname, 'assets/scss')]
+        includePaths: [path.resolve(__dirname, 'src/css')]
       },
     },
   },
+  plugins: [
+    shopify({
+      entrypointsDir: "src/css"
+    }),
+  ],
 });
