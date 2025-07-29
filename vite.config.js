@@ -13,7 +13,7 @@ export default defineConfig({
         main: path.resolve(__dirname, 'src/css/main.scss')
       },
       output: {
-        assetFileNames: 'assets/[name].[hash].css'
+        assetFileNames: 'assets/[name].css'
       },
     },
   },
