@@ -1,40 +1,47 @@
-{% comment %}
 <header>
-  <div class="header-menu-icon-wrapper">
+  <div class='header-menu-icon-wrapper'>
     {{ 'icon-hamburger-menu.svg' | inline_asset_content }}
   </div>
-  <div class="header-menu-wrapper">
+  <div class='header-menu-wrapper'>
     <p>SHOP ALL</p>
   </div>
-  <div class="header-logo-wrapper">
-    <a class="header-logo-link" href="{{ routes.root_url }}">
-      <img width="1302" height="1208" class="header-logo" src="https://cdn.shopify.com/s/files/1/0948/8239/8281/files/logo-large.webp?v=1753136571">
+  <div class='header-logo-wrapper'>
+    <a class='header-logo-link' href='{{ routes.root_url }}'>
+      <img class='header-logo' width='1272' height='298' src='{{ 'logo-medium.webp' | asset_url }}'>
     </a>
   </div>
-  <div class="header-actions-wrapper">
+  <div class='header-actions-wrapper'>
     {% if shop.customer_accounts_enabled %}
-    <div class="header-account-wrapper">
-      {{ 'icon-account.svg' | inline_asset_content | link_to: routes.account_url }}
+    <div class='header-account-wrapper'>
+      <a class='header-account-link' href='{{ routes.account_url }}'>
+        {{ 'icon-account.svg' | inline_asset_content }}
+      </a>
     </div>
     {% endif %}
-    <div class="header-cart-wrapper">
-      <div class="header-cart-inner">
-        <a class="header-cart-link" href="{{ routes.cart_url }}">
+    <div class='header-cart-wrapper'>
+      <div class='header-cart-inner'>
+        <a class='header-cart-link' href='{{ routes.cart_url }}'>
           {% if cart.item_count > 0 %}
-            <sup>{{ cart.item_count }}</sup>
+            <sup class='cart-count'>{{ cart.item_count }}</sup>
           {% endif %}
           {{ 'icon-cart.svg' | inline_asset_content }}
         </a>
       </div>
     </div>
   </div>
-  <div class="header-search-wrapper">
-    <form class="header-search-form">
-      <input class="header-search-input" type="search">
-      <button class="header-search-submit" type="submit">
+  <div class='header-search-wrapper'>
+    <form class='header-search-form'>
+      <input class='header-search-input' type='search'>
+      <button class='header-search-submit' type='submit'>
         {{ 'icon-search.svg' | inline_asset_content }}
       </button>
     </form>
   </div>
 </header>
-{% endcomment %}
+{% schema %}
+{
+  "name": "Header",
+  "class": "header-section",
+  "settings": []
+}
+{% endschema %}

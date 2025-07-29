@@ -1,0 +1,103 @@
+.header-section {
+    height: 70px;
+    padding: 0 14px;
+    padding-right: 8px;
+
+    header {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 32px 1fr 78px;
+        grid-template-rows: 100%;
+        align-items: center;
+        column-gap: 14px;
+    }
+
+    .header-menu-icon-wrapper {
+
+    }
+
+    .icon-hamburger-menu {
+        display: block;
+        box-sizing: content-box;
+        width: 32px;
+        height: 20px;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+
+    .header-menu-wrapper {
+        display: none;
+    }
+
+    .header-logo-wrapper {
+        line-height: 0;
+        text-align: center;
+    }
+
+    .header-logo-link {
+        display: inline-block;
+    }
+
+    .header-logo {
+        display: block;
+        width: 180px;
+        height: 100%;
+    }
+
+    .header-actions-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        column-gap: 6px;
+    }
+
+    .header-account-link {
+        box-sizing: content-box;
+        padding: 4px 0;
+    }
+
+    .icon-account {
+        display: block;
+    }
+
+    .header-cart-wrapper {
+
+    }
+
+    .header-cart-inner {
+
+    }
+
+    .header-cart-link {
+        box-sizing: content-box;
+        padding: 6px 0;
+    }
+
+    .cart-count {
+
+    }
+
+    .icon-cart {
+        display: block;
+    }
+
+    .header-search-wrapper {
+        display: none;
+    }
+
+    .header-search-form {
+
+    }
+
+    .header-search-input {
+
+    }
+
+    .header-search-submit {
+
+    }
+
+    .icon-search {
+
+    }
+}

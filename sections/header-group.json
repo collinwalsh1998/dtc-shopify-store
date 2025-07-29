@@ -11,12 +11,17 @@
     "type": "header",
     "name": "Header",
     "sections": {
+        "topbar": {
+            "type": "topbar",
+            "settings": {}
+        },
         "header": {
             "type": "header",
             "settings": {}
         }
     },
     "order": [
+        "topbar",
         "header"
     ]
 }

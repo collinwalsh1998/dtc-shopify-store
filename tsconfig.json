@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "checkJs": true,
+    "allowJs": true,
+    "paths": {
+      "@/*": ["frontend/*"],
+      "~/*": ["frontend/*"]
+    }
+  },
+  "exclude": ["assets"]
+}
