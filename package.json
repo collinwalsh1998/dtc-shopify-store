@@ -17,13 +17,14 @@
     "build": "vite build"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.32",
+    "@types/slick-carousel": "^1.6.40",
     "sass": "^1.89.2",
     "typescript": "^5.8.3",
     "vite": "^7.0.6",
     "vite-plugin-shopify": "^4.0.2"
   },
   "dependencies": {
-    "modern-normalize": "^3.0.1",
-    "slick-carousel": "^1.8.1"
+    "modern-normalize": "^3.0.1"
   }
 }
