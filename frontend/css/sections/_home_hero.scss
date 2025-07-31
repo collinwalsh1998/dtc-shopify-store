@@ -1,0 +1,49 @@
+.hero-section {
+  section {
+
+  }
+
+  .hero-inner {
+    position: relative;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 16px;
+  }
+
+  .hero-header {
+    font-size: 44px;
+    text-align: center;
+    font-weight: 700;
+    color: #1A1A1A;
+  }
+
+  .hero-subheader {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+    text-align: center;
+    color: #1A1A1A;
+    margin-top: 14px;
+
+    span {
+      font-weight: 800;
+    }
+  }
+
+  .cta-wrapper {
+    margin-top: 20px;
+  }
+
+  .cta-link {
+
+  }
+}

@@ -1,0 +1,20 @@
+<section>
+  <div class="hero-inner">
+    <img class="hero-image" width="800" height="1200" src="{{ 'hero-mobile.webp' | asset_url }}">
+    <div class="hero-content">
+      <h1 class="hero-header">Today Only!</h1>
+      <h2 class="hero-subheader">Enjoy 30% off <br>all multivitamins <br>with code <span>MULTI</span></h2>
+      <div class="cta-wrapper">
+        <a class="cta-link hero-cta" href="/collections/multivitamins">SHOP NOW</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero",
+  "class": "hero-section",
+  "settings": []
+}
+{% endschema %}

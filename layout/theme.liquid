@@ -9,6 +9,11 @@
     {% liquid
       render 'vite-tag' with 'theme.scss'
       render 'vite-tag' with 'theme.mts'
+
+      if template == 'index'
+        render 'vite-tag' with 'home.scss'
+        render 'vite-tag' with 'home.mts'
+      endif
     %}
 </head>
 <body>
