@@ -1,0 +1,34 @@
+<section>
+  <h1 class="section-header fp-header">Our Best Sellers</h1>
+  <div class="fp-inner">
+    <div class="fp-slider">
+      {% for product in collections['featured-products'].products %}
+      <div class="fp-slide">
+        <div class="fp-image-wrapper">
+          <a class="fp-image-link" href="{{ product.url }}">
+            <img class="fp-image" width="160" height="320" src="{{ product.featured_image | image_url: width: 240 }}">
+          </a>
+        </div>
+        <div class="fp-content">
+          <a class="fp-title" href="{{ product.url }}">{{ product.title }}</a>
+          <p class="fp-price">{{ product.price | money }}</p>
+        </div>
+        <div class="cta-wrapper">
+          <button type="button" class="cta-button cta-add" data-variant-id="{{ product.variants.selected_or_first_available_variant.id }}">ADD TO CART</button>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="fp-controls">
+      <button type="button" class="fp-arrow fp-prev">{{ 'icon-chevron-left.svg' | inline_asset_content }}</button>
+      <button type="button" class="fp-arrow fp-next">{{ 'icon-chevron-right.svg' | inline_asset_content }}</button>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Featured Products",
+  "class": "featured-products",
+  "settings": []
+}
+{% endschema %}

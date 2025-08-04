@@ -1,19 +1,4 @@
 @use 'modern-normalize/modern-normalize.css';
 @use '../css/reset';
+@use '../css/theme';
 @use '../css/sections/_header';
-
-.cta-wrapper {
-    display: block;
-    text-align: center;
-}
-
-.cta-link {
-    display: inline-block;
-    vertical-align: top;
-    color: white;
-    font-weight: bold;
-    background-color: #0B3C49;
-    border-radius: 24px;
-    margin: 0;
-    padding: 12px 34px;
-}
